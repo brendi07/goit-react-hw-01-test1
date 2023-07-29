@@ -34,13 +34,12 @@ export const Body = styled.tbody`
 `;
 
 export const BodyList = styled.tr`
-  &:nth-child(odd) {
+  &:nth-of-type(odd) {
     background: #fff;
-  };
-  &:nth-child(even){
-	background: pink;
-};
-
+  }
+  &:nth-of-type(even) {
+    background: pink;
+  }
 `;
 
 export const BodyItem = styled.td`
