@@ -1,7 +1,8 @@
-import { Item, Online, Ofline, Avatar, Name } from "./FriendListItem.styled";
 import PropTypes from "prop-types";
 
-export default function FriendListItem({id, avatar, name, isOnline}) {
+import { Item, Online, Ofline, Avatar, Name } from './FriendListItem.styled';
+
+export default function FriendListItem({ avatar, name, isOnline}) {
     return (
       <>
         <Item>
@@ -15,8 +16,7 @@ export default function FriendListItem({id, avatar, name, isOnline}) {
 }
 
 FriendListItem.propTypes = {
-  id: PropTypes.number,
-  avatar: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
 };

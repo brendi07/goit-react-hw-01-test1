@@ -1,12 +1,13 @@
-import user from "./assets/user.json";
-import data from "./assets/data.json";
-import friends from "./assets/friends.json";
-import transactions from "./assets/transactions.json";
-import Profile from "./components/profile/Profile";
-import Statistics from "./components/statistics/Statistics";
-import FriendList from "./components/friends/FriendList";
-import TransactionHistory from "./components/transactions/TransactionHistory";
-import {AppTag} from "./App.styled"
+import Profile from './components/profile/Profile';
+import Statistics from './components/statistics/Statistics';
+import FriendList from './components/friends_list/FriendList';
+import TransactionHistory from './components/transactions/TransactionHistory';
+import { AppTag } from './App.styled';
+
+import user from './assets/user.json';
+import data from './assets/data.json';
+import friends from './assets/friends.json';
+import transactions from './assets/transactions.json';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
-      <TransactionHistory items={transactions}/>
+      <TransactionHistory items={transactions} />
     </AppTag>
   );
 }
